@@ -74,6 +74,7 @@ function loadGist(el) {
   function markdownToHtml(txt) {
     let converter = new showdown.Converter({
       noHeaderId: true,
+      tables: true,
       headerLevelStart: 2,
       literalMidWordUnderscores: true
     });
